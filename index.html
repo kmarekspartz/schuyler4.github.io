@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+	<title>tick tack toe</title>
+	<script src="https://unpkg.com/vue"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div id="app">
+		<table>
+			<tr v-for="(row, rowIndex) in board">
+				<td v-for="(column, columnIndex) in row" v-on:click="boardOnClick(rowIndex, columnIndex)">
+					{{ board[rowIndex][columnIndex] }}
+				</td>
+			</tr>
+		</table>
+		<p>{{ player }} turn</p>
+		<p>{{ status }} </p>
+		<button v-if="!gameGoing" v-on:click="resetGame()">Play Again</button>
+	</div>
+	<script src='main.js'></script>
+</body>
+</html>
