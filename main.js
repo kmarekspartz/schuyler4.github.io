@@ -4,7 +4,8 @@ const app = new Vue({
 		board: [['', '', ''], ['', '', ''], ['', '', '']],
 		player: 'X',
 		gameGoing: true,
-		status: ''
+		status: '',
+		singlePlayerMode: false
 	},
 
 	methods: {
@@ -24,8 +25,8 @@ const app = new Vue({
 
 		checkWinner() {
 			let player = 'X';
-			for (let i = 0; i < 3; i++) {
-				for(let p = 0; p < 2; p++) {
+			for(let p = 0; p < 2; p++) {
+				for (let i = 0; i < 3; i++) {
 					const horizontal =  player === this.board[i][0] && player === this.board[i][1] && player === this.board[i][2];
 					const vertical = player === this.board[0][i] && player === this.board[1][i] && player === this.board[2][i];
 
@@ -37,8 +38,8 @@ const app = new Vue({
 						this.status = 'player ' + player + ' one';
 						return;
 					} 
-					player = 'O';
 				}
+				player = 'O';
 			}
 				
 			for (row of this.board) {
@@ -59,4 +60,5 @@ const app = new Vue({
 			this.status = '';
 		}
 	}
-})
+
+});
