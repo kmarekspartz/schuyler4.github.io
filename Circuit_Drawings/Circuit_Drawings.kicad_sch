@@ -1,0 +1,65 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid c924b534-0baa-4e79-be3b-346602d0fc2e)
+
+  (paper "A")
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 44.45 35.56) (size 40.64 25.4) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 1b6e740e-d460-490e-af76-9bee3ef6c15c)
+    (property "Sheetname" "Resistor Circuits" (at 44.45 34.8484 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "resistor-circuits.kicad_sch" (at 44.45 61.5446 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "Circuit_Drawings"
+        (path "/c924b534-0baa-4e79-be3b-346602d0fc2e" (page "2"))
+      )
+    )
+  )
+
+  (sheet (at 100.33 35.56) (size 33.02 25.4) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 218a9a39-7160-4435-9d18-36612ce5ef35)
+    (property "Sheetname" "RC" (at 100.33 34.8484 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "RC.kicad_sch" (at 100.33 61.5446 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "Circuit_Drawings"
+        (path "/c924b534-0baa-4e79-be3b-346602d0fc2e" (page "3"))
+      )
+    )
+  )
+
+  (sheet (at 140.97 35.56) (size 35.56 25.4) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 650b4ef2-8af3-4176-8148-118b106083cd)
+    (property "Sheetname" "Capacitors" (at 140.97 34.8484 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "capacitors.kicad_sch" (at 140.97 61.5446 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "Circuit_Drawings"
+        (path "/c924b534-0baa-4e79-be3b-346602d0fc2e" (page "4"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)

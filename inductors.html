@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Inductors</title>
+<style>
+    body {
+        font-family:FreeMono;
+        font-size: 20;
+    }
+</style>
+</head>
+<h2> Inductors </h2>
+<p>
+So there is one last passive component to go which is the inductor. The fundemental 
+equation for inductance is as follows: <br>
+L = φ/I<br>
+Any time current flows through a wire there will be a magnetic field around it. This 
+is a result of Ampere's Law. In this sense, any wire is an inductor, or at least has
+some inductance. Okay, before we figure out how to build a better inductor and how 
+it relates to magnetic flux linkage: let's look at the consequences of this. 
+The other important law involved with inductors is Faradays law. Faradays law states a 
+changing magnetic field induces a voltage. This is stated mathematically: <br>     
+V = dφ/dt (As usual I have skipped a sign convention here. Additionally there is a
+techinical detail I skipped but it shoulden't matter for electronics) <br>
+Quick derivation of equation that is usefull in electronics: <br>
+φ = LI <br>
+V = d/dt (LI) <br>
+V = L*(dI/dt) <br>
+As we can see the voltage across an inductor is equal to its inductance times the
+the change in current through it. This is because a changing current leads to a 
+changing magnetic field, and a changing magnetic field induces a voltage. 
+</p>
+<b> Inductors In Some Basic Circuits </b>
+If you put an inductor in parallel with a voltage source it will lead to an infinitly 
+increasing current (in reality the inductor will saturate). This is basically a short
+circuit so it is recommended that you don't try this. 
+
+Putting an inductor in parallel with a current source is equivalent with putting a wire
+in parallel with a current source as long as the current source is constant. 
+
+You can also build RL circuits like you can build RC circuits. However, these are not
+used as often do to capacitors being more ideal and common than inductors. You can look
+these up or figure them out if you are interested. 
+<a href="./magnetics.html">Back</a>
+<a href="./reactance-impedance.html">Next</a>

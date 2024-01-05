@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mathematics</title>
+<style>
+    body {
+        font-family:FreeMono;
+        font-size: 20;
+    }
+</style>
+</head>
+<h2> Mathematics </h2>
+<b> What is Mathematics </b>
+<p>
+Before I go into the calculus stuff, here is a short my take on the philosophy and utility
+of mathematics. Mathematics boils down into two things:
+<ol>
+<li><p>A maximally concise, universal, generalizable, and precise language with which to express ideas. </p></li> 
+<li><p>A formal procedure that can make people behave like computers</p></li>
+</ol>
+
+I don't want to claim that #2 is not useful. However, these days 
+it is only useful in semi trivial cases. If you find yourself doing a long computation to solve
+a problem, you should probably ask if the long computation is actually necessary. Often times 
+it can be simplified into a short trivial computation. If the long computation is 
+necessary, then you are probably better off having a computer do it as this is what computers
+are good for (You will have to know #1 to program the computer to do it). 
+
+Now to #1. #1 is also extremely useful. Knowing the language of mathematics will enable 
+you to understand ideas that you cannot understand without knowing the language of mathematics.
+You cannot learn electronics without knowing some ideas from calculus and algebra. Unfortunately, #1 is often completely or mostly overlooked in most formal math classes. 
+</p>
+<b> Calculus </b>
+<p>
+There are two useful ideas from calculus that are used in electronics, derivatives
+and integrals. 
+</p>
+<b> Derivative </b>
+<p>
+A derivative is function that expresses the rate of change of another function. Putting an x
+values into a functions derivative will return the rate of change of the function at that
+x value. There are 3 derivatives that come up often in electronics. The first is the derivative
+of a linear function. By definition, a linear function has a constant rate of change. So the 
+derivative of a linear function is simply a constant. The second is exp(x) the derivative of
+exp(x) is also exp(x). This is evident by looking at the graph. The third function is a sinusoid (sin(x) and cos(x). The derivative of a sinusoid is also a sinusoid, but it is phase shifted
+by 90 degrees. The maximum rate of change of a sinusoid occurs at the zero crossing so this 
+where the maximum of the derivative will be. The minimum rate of change occurs at the peak. 
+Likewise this will be the minimum of the derivative. This will lead to a 90 degree phase 
+shift between the sinusoid and its derivative. 
+</p>
+<b> Integral </b>
+<p>
+An integral is the signed area under a function within some bounds (technically a definite integral). An integral of a constant is the area of a rectangle. Also for a constant function, If you take one of the bounds and
+move it, then plot the integral at each x as a function you will get a linear function.
+The integral of a sine wave with bounds that extend though many periods is zero. The negative
+area is equal to the positive area.  
+</p>
+<a href="./background.html">Back</a>
+<a href="./electricity.html">Next</a>
