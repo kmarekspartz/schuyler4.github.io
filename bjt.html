@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bipolar Junction Transistor</title>
+<style>
+    body {
+        font-family:FreeMono;
+        font-size: 20;
+    }
+</style>
+</head>
+<h2> Bipolar Junction Transistor </h2>
+<p>
+<b> Amplifiers </b>
+<p>
+Now we will move to active semiconductor components. Active semiconductor components 
+are amplifiers. Fundementtaly, an amplifier is a component that we can feed a signal (in 
+electronics a signal is a voltage our a current) 
+into and get a bigger signal out of in some controllable way. That is, we should have
+at least some idea how much bigger our output signal is.
+</p>
+<b> Turning an Amplifier Into a Switch </b>
+<p>
+Active components can also be used as switches. Much more than they are used as amplifier
+in fact (What do you think the computer your reading this on is made from?). Switches are 
+basically saturated amplifiers. That is, we amplify our input signal so much that our output
+signal can't get any bigger. Then we basically have a switch. 
+</p>
+<b> BJT </b>
+<p>
+A bjt is a type of transistor. Unlike all the components we have looked at so far, transistors
+have three terminals. In the case of an BJT there is a base, an emitter, and a collector. In 
+an NPN BJT, our amplfied signal (current) flows from collector to emitter. 
+</p>
+<b> Current Amplifier BJT Model </b>
+<p>
+In one sense, we can think of a BJT as a current amplifier. There is a effectivly a diode
+from base to emitter and another effectivly reverse biased diode from collector to base. Aka
+current won't flow from the collector to the base. We can put a small current into the base
+the same way we might put a current into a diode (series resistor) and we will get a larger
+current from the collector to emitter. The amplification from the base current to the 
+collector current is based on a property of the transistor called its beta. Note beta isen't
+very constant and varies from transistor to transistor even within the same part. 
+</p>
+<b> Building a Switch with a BJT </b>
+<p>
+To make a switch with a BJT we simply have saturate our current amplifier. To do this 
+we make sure that the component we are switching current through will only allow a certain 
+amount of current, and we amplify to a greater amount of current. You should proably 
+assume beta is much lower than it is specified when doing this (maybe 10). 
+<b> Building an Amplifier with a BJT </b>
+<p>
+You should probably just use an op amp unless you are aiming for semi high power.
+<p>
+<b> BJT Transconductance Model </b>
+<p>
+It is worth noting that although the current amplifer model works for makeing switches it
+is technically incorrect. Remember how the current through a diode is an exponential function
+of its voltage. It turns out that the collector to emitter current is actualy set by this 
+voltage. This voltage just changes very little with a large change in current, so we can 
+approximatly think about it as set with the current.  
+</p>
+<a href="./diodes.html">Back</a>
+<a href="./mosfet.html">Next</a>
