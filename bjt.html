@@ -14,10 +14,9 @@
 <b> Amplifiers </b>
 <p>
 Now we will move to active semiconductor components. Active semiconductor components 
-are amplifiers. Fundementtaly, an amplifier is a component that we can feed a signal (in 
-electronics a signal is a voltage our a current) 
-into and get a bigger signal out of in some controllable way. That is, we should have
-at least some idea how much bigger our output signal is.
+are amplifiers. Fundamentally, an amplifier is a component that we can feed a signal 
+into, and get a bigger signal out of in some controllable way  (in 
+electronics a signal is a voltage or a current). 
 </p>
 <b> Turning an Amplifier Into a Switch </b>
 <p>
@@ -28,37 +27,38 @@ signal can't get any bigger. Then we basically have a switch.
 </p>
 <b> BJT </b>
 <p>
-A bjt is a type of transistor. Unlike all the components we have looked at so far, transistors
+A BJT is a type of transistor. Unlike all the components we have looked at so far, transistors
 have three terminals. In the case of an BJT there is a base, an emitter, and a collector. In 
-an NPN BJT, our amplfied signal (current) flows from collector to emitter. 
+an NPN BJT, our amplified signal (current) flows from collector to emitter. 
 </p>
 <b> Current Amplifier BJT Model </b>
 <p>
-In one sense, we can think of a BJT as a current amplifier. There is a effectivly a diode
-from base to emitter and another effectivly reverse biased diode from collector to base. Aka
+In one sense, we can think of a BJT as a current amplifier. There is a effectively a diode
+from base to emitter and another effectively reverse biased diode from collector to base. Aka
 current won't flow from the collector to the base. We can put a small current into the base
 the same way we might put a current into a diode (series resistor) and we will get a larger
 current from the collector to emitter. The amplification from the base current to the 
-collector current is based on a property of the transistor called its beta. Note beta isen't
-very constant and varies from transistor to transistor even within the same part. 
+collector current is based on a property of the transistor called its beta. Beta isn't
+very constant and varies from transistor to transistor even if they are the same part. 
 </p>
 <b> Building a Switch with a BJT </b>
 <p>
-To make a switch with a BJT we simply have saturate our current amplifier. To do this 
+To make a switch with a BJT we simply have to saturate our current amplifier. To do this 
 we make sure that the component we are switching current through will only allow a certain 
-amount of current, and we amplify to a greater amount of current. You should proably 
+amount of current, and we amplify to a greater curren. You should probably 
 assume beta is much lower than it is specified when doing this (maybe 10). 
+</p>
 <b> Building an Amplifier with a BJT </b>
 <p>
 You should probably just use an op amp unless you are aiming for semi high power.
 <p>
 <b> BJT Transconductance Model </b>
 <p>
-It is worth noting that although the current amplifer model works for makeing switches it
+It is worth noting that although the current amplifier model of a BJT works for making switches, it
 is technically incorrect. Remember how the current through a diode is an exponential function
-of its voltage. It turns out that the collector to emitter current is actualy set by this 
-voltage. This voltage just changes very little with a large change in current, so we can 
-approximatly think about it as set with the current.  
+of its voltage? It turns out that the collector to emitter current is actually set by this 
+voltage. This voltage just changes very little with a large change in current, which makes the current
+amplifier approximation possible.
 </p>
 <a href="./diodes.html">Back</a>
 <a href="./mosfet.html">Next</a>

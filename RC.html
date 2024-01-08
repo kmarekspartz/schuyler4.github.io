@@ -16,7 +16,7 @@ Let's consider an RC circuit. The most basic RC circuit is a capacitor in parall
 </p>
 <img src="./pictures/RC-parallel.png"></img>
 <p> The capacitor must
-start with some charge/voltage across it, otherwise the circuit won't do anything. So what happens with this circuit when
+start with some charge/[voltage across it], otherwise the circuit won't do anything. So what happens with this circuit when
 time starts running? There is a voltage across the capacitor, so there is also a voltage across the resistor. This means
 that there must be a current through the resistor and also through the capacitor. Sense there is a current through the 
 capacitor, there must also be a changing voltage across it. Sense the current is leaving the capacitor, the changing voltage 
@@ -26,7 +26,7 @@ decrease, and in turn, the rate of decrease is going to decrease. So basically, 
 be a function that continuously decreases and its derivative continuously decreases. What does this sound like? An exponential.
 The actual equation for this case is: <br>
 V(t) = Vie^(-t/τ) <br>
-Normally, this equation is solved using a differential equation that is found using ohms law and I = C(dv/dt). We kinda just 
+Normally, this equation is solved using a differential equation that is found using ohms law and I = C(dV/dt). We kinda just 
 solved this differential equation intuitively, and I don't like solving differential equations, so I won't bother doing it 
 here. 
 </p>
@@ -52,7 +52,7 @@ We will now look at an RC circuit that is driven by a voltage source like so.
 We will assume that the capacitor starts with no charge/voltage across it. Given this, 
 as soon as the switch closes all the voltage will land across the resistor. This will 
 give an initial current of Vs/R. There is now a current flowing into the capacitor which
-means there is going to be a ramping voltage. And like the previos capacitor circuit, 
+means there is going to be a ramping voltage. And like the previous capacitor circuit, 
 the ramping capacitor voltage will lead to a lower current set by the resistor, which 
 will lead to a lower rate of ramping and so fourth. This yields another exponential equation: <br>
 V(t) = Vs(1-e^(-t/τ))<br>
