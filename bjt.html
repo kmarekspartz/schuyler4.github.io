@@ -39,13 +39,13 @@ current won't flow from the collector to the base. We can put a small current in
 the same way we might put a current into a diode (series resistor) and we will get a larger
 current from the collector to emitter. The amplification from the base current to the 
 collector current is based on a property of the transistor called its beta. Beta isn't
-very constant and varies from transistor to transistor even if they are the same part. 
+very constant and varies from transistor to transistor, even if they are the same part. 
 </p>
 <b> Building a Switch with a BJT </b>
 <p>
 To make a switch with a BJT we simply have to saturate our current amplifier. To do this 
 we make sure that the component we are switching current through will only allow a certain 
-amount of current, and we amplify to a greater current. You should probably 
+amount of current, and we amplify expecting a greater current. You should probably 
 assume beta is much lower than it is specified when doing this (maybe 10). 
 </p>
 <b> Building an Amplifier with a BJT </b>
@@ -57,7 +57,7 @@ You should probably just use an op amp unless you are aiming for semi high power
 It is worth noting that although the current amplifier model of a BJT works for making switches, it
 is technically incorrect. Remember how the current through a diode is an exponential function
 of the voltage across it? It turns out that the collector to emitter current is technically set by this 
-voltage, not the base current. 
+voltage, across the effective base emitter diode, not the base current. 
 </p>
 <b> BJT Circuit Switching an LED </b>
 <br>

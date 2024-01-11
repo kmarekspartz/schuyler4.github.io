@@ -23,17 +23,17 @@ are also enhancement mode and depletion mode MOSFETs, but no one uses depletion 
 One big difference between a MOSFET and a BJT, is that the gate is fully isolated from 
 the drain and the source. That is, there is a complete insulation layer between. This 
 means that if there is a DC voltage signal on the gate, no current will flow into it. This
-is advantageous because we are not wasting any power turning on the MOSFET (At least if it is truely constant DC). 
+is advantageous because we are not wasting any power turning on the MOSFET (At least using a truly constant DC signal). 
 </p>
 <b> How an N-Channel MOSFET Works </b>
 <p>
 With an n-channel MOSFET, applying a voltage to the gate with respect to the source will
 lead to a drain to source current. How much current depends on the gate to source voltage. 
 A good way to quantify this is by looking at the IV curves found in MOSFET datasheets. You can
-look up a common N-Channel MOSFET like the 2N7000 and look at the IV graphs given in the datasheet (I'm not going to put it here because that would be plagarism or something).
+look up a common N-Channel MOSFET like the 2N7000 and look at the IV graphs given in the datasheet (I'm not going to put it here because that would be plagiarism or something).
 </p>
 <p>
-As you can see, at different gate to source voltages, the response is initially linear, so looks 
+As you can see, at different gate to source voltages, the response is initially approximately linear, so looks 
 like a resistor. Then it flattens out. The key to switching with a MOSFET is making sure you keep
 it in the linear region. If you do this, it is basically a voltage controlled switch with a somewhat
 known on resistance. 
