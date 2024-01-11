@@ -25,7 +25,7 @@ going to be proportional to Vi/R. However, as soon as current starts flowing the
 decrease, and in turn, the rate of decrease is going to decrease. So basically, the voltage across the circuit is going to
 be a function that continuously decreases and its derivative continuously decreases. What does this sound like? An exponential.
 The actual equation for this case is: <br>
-V(t) = Vie^(-t/τ) <br>
+V(t) = Vi*e^(-t/τ) <br>
 Normally, this equation is solved using a differential equation that is found using ohms law and I = C(dV/dt). We kinda just 
 solved this differential equation intuitively, and I don't like solving differential equations, so I won't bother doing it 
 here. 
@@ -44,7 +44,7 @@ is basically a parameter that is present in exponential responses in physical sy
 never actually reaches zero. The time constant allows us to quantify the response despite this. After one time constant, the 
 capacitor will be 63.2% discharged. After 2 time constants the capacitor will be 86.5% discharged, etc (You can calculate this
 further using the equation). Also notice that 63.2% is approximately 2/3. After one time constant the capacitor is approximately 
-2/3 discharged (1/3 charged). After two time constants the capacitor is approximately 2/3 discharged of 2/3 discharged capacitor (1/9 charged), etc. Notice that 
+2/3 discharged (1/3 charged). After two time constants the capacitor is approximately 2/3 discharged of 2/3 discharged capacitor, etc. Notice that 
 with this trend the response will never actually reach zero, but it will get very close. In an RC circuit the time constant is
 calculated with the following formula.<br> 
 τ = RC <br>
@@ -67,4 +67,4 @@ The time constant is also similar in this equation. Instead of the capacitor bei
 after one time constant it is 2/3 charged. Then 2/3 more charged, etc.
 </p>
 <a href="./capacitors.html">Back</a>
-<a href="./magnetics.html">Next</a>
+<a href="./inductors.html">Next</a>

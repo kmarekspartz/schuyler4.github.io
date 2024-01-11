@@ -11,23 +11,16 @@
 </head>
 <h2> Inductors </h2>
 <p>
-So there is one last component to go before moving to semiconductors. The inductor. The fundamental 
-equation for inductance is as follows: <br>
-L = φ/I<br>
-(in a sizable inductor φ is magnetic flux linkage not just magnetic flux) <br>
-Any time current flows through a loop of wire there will be a magnetic field around it and a magnetic flux through the loop area. This 
-is a result of Ampere's Law. In this sense, any wire is an inductor, or at least has
-some inductance.  
-The other important law involved with inductors is Faradays law. Faradays law says that a 
-changing magnetic flux induces a voltage. This is stated mathematically: <br>     
-V = dφ/dt (As usual I have skipped a sign convention here. Additionally there are some physics details I skipped, but they shouldn't matter for electronics) <br>
-Quick derivation of the equation that is useful in electronics: <br>
-φ = LI <br>
-V = d/dt(LI) <br>
-V = L(dI/dt) <br>
-As we can see, the voltage across an inductor is equal to its inductance times the
-the change in current through it. This is because a changing current leads to a 
-changing magnetic field, and a changing magnetic field induces a voltage. 
+So far we have not talked about how magnetic interaction in circuits at all despite it being very important. Any
+time we have a current flow in a wire we are going to get a magnetic field that wraps around it. This is a result 
+of Ampere's law. A magnetic field can be visualized using field lines. Alternatively, there are more mathematical
+ways to think about it using vector fields. If we have a changing magnetic field passing through a loop (changing magnetic flux), 
+then we will induce a voltage across our loop. This is a result of Faradays law. Putting a changing current through a loop of wire will result in 
+a changing magnetic field through the loop of wire, and this changing magnetic field will induce a voltage. If we want to amplify this effect, we can simply create more than
+one loop. All this boils down to a voltage accross our loop
+that is proportional to the rate of change of current through it and the number of loops of wire. This idea is also stated in the inductor equation like so: <br>
+V = L(dI/dt)<br>
+L is the inductance which quantifies how much linked magnetic flux (magnetic field passing through multiple loops) is generated per amp of current.
 </p>
 <b> Inductors In Some Basic Circuits </b>
 <p>
@@ -45,5 +38,5 @@ often. You can look these up or figure them out if you are interested.
 <p>
 Inductors in parallel and series follow the same rules as resistors in parallel and series, just inductors instead. 
 </p>
-<a href="./magnetics.html">Back</a>
+<a href="./RC.html">Back</a>
 <a href="./diodes.html">Next</a>
