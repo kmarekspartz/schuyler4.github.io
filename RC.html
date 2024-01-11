@@ -30,6 +30,13 @@ Normally, this equation is solved using a differential equation that is found us
 solved this differential equation intuitively, and I don't like solving differential equations, so I won't bother doing it 
 here. 
 </p>
+<p>
+A plot of the voltage and current for the parallel RC circuit are shown below. Everything is set to one. That is, a 1 Farad 
+capacitor, a 1 ohm resistor, and a 1 volt starting voltage across the capacitor.
+</p>
+<img src="./pictures/RC-voltage.png"></img>
+<img src="./pictures/RC-current.png"></img>
+<br>
 <b> Time Constant </b>
 <p>
 All of the variables in the above equation should make sense except for tau (τ). Tau is the time constant. A time constant 
@@ -37,7 +44,7 @@ is basically a parameter that is present in exponential responses in physical sy
 never actually reaches zero. The time constant allows us to quantify the response despite this. After one time constant, the 
 capacitor will be 63.2% discharged. After 2 time constants the capacitor will be 86.5% discharged, etc (You can calculate this
 further using the equation). Also notice that 63.2% is approximately 2/3. After one time constant the capacitor is approximately 
-2/3 discharged. After two time constants the capacitor is approximately 2/3 discharged of 2/3 discharged, etc. Notice that 
+2/3 discharged (1/3 charged). After two time constants the capacitor is approximately 2/3 discharged of 2/3 discharged capacitor (1/9 charged), etc. Notice that 
 with this trend the response will never actually reach zero, but it will get very close. In an RC circuit the time constant is
 calculated with the following formula.<br> 
 τ = RC <br>

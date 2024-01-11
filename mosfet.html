@@ -13,7 +13,7 @@
 <b> Similarities to BJT </b>
 <p> 
 Despite what some people think, a MOSFET is a type of transistor (These people also clearly don't know what MOSFET stands for). Remember how
-a BJT is technically a voltage controlled device? While a MOSFET is a "true" voltage 
+a BJT is technically a voltage controlled device? While a MOSFET is a "better" voltage 
 controlled device. Like a BJT there are three terminals: gate, source, and drain. Also
 like a bjt, there are two classes of devices: N-Channel and P-Channel (technically there
 are also enhancement mode and depletion mode MOSFETs, but no one uses depletion mode).
@@ -23,14 +23,14 @@ are also enhancement mode and depletion mode MOSFETs, but no one uses depletion 
 One big difference between a MOSFET and a BJT, is that the gate is fully isolated from 
 the drain and the source. That is, there is a complete insulation layer between. This 
 means that if there is a DC voltage signal on the gate, no current will flow into it. This
-is advantageous because we are not wasting any power turning on the MOSFET (At least at steady state). 
+is advantageous because we are not wasting any power turning on the MOSFET (At least if it is truely constant DC). 
 </p>
 <b> How an N-Channel MOSFET Works </b>
 <p>
 With an n-channel MOSFET, applying a voltage to the gate with respect to the source will
 lead to a drain to source current. How much current depends on the gate to source voltage. 
-A good way to quantify this is by looking at the IV curves found on MOSFET datasheets. Below
-you can see one from a 2N7000 MOSFET. 
+A good way to quantify this is by looking at the IV curves found in MOSFET datasheets. You can
+look up a common N-Channel MOSFET like the 2N7000 and look at the IV graphs given in the datasheet (I'm not going to put it here because that would be plagarism or something).
 </p>
 <p>
 As you can see, at different gate to source voltages, the response is initially linear, so looks 
@@ -42,6 +42,6 @@ known on resistance.
 <p>
 The drain to source on resistance is so important when using MOSFETs for switching that it is often 
 given as its own specification. Of course, it is dependent on gate to source voltage and
-other stuff. But, basically, if your on resistance is low, your MOSFET is a better switch.
+other stuff, and your MOSFET must be in its resistive region for it to apply. But, generally, if your on resistance is low, your MOSFET is a better switch.
 </p>
 <a href="./bjt.html">Back</a>

@@ -33,7 +33,8 @@ Current is the rate of change of charge with respect to time (derivative) throug
 </p>
 <b>Voltage</b>
 <p>
-Voltage is the pushing pressure that is applied to charge in a circuit. Voltage is always measured between two points.
+Voltage is the pushing pressure that is applied to charge in a circuit. Voltage is not a measure of potential energy, it is a measure of potential energy
+per unit charge. And remember, potential energy is always relative to some location. Given this, voltage is always measured between two points. 
 </p>
 <b>What is Resistance</b>
 <p>
@@ -43,22 +44,14 @@ It takes work to move charge through a resistance, or to make current flow throu
 <b>Circuit Components (Lumped Element Model)</b>
 <p>
 When we design and build circuits it is helpful to represent them as components connected together. 
-A lumped element model breaks circuits into components that have given electrial properties.
-This idea is also key to how circuits are built and circuit components are sold. For example, say we
-want to build a circuit with a certain resistance. We could buy a chunk of carbon, calculate the geometry necissary
-for the resistance, and machine the carbon to built the resistance that we want. Alternativly, in the modern world, 
-I can simply order a resistor from the internet that has the resistance I want. A resistor is a circuit component that
-has a certain component. This approach has a number of advantages:
+This idea is also key to how circuits are built and circuit components are sold. This approach has a number of advantages:
 <ol>
 <li>It is not necessary to reinvent the wheel (components) every time a new circuit is built. </li>
 <li>There is an abstraction layer between the circuit design and the physical circuit that is built. I can add a resistor
 to my circuit that has a certain resistance without having to know anything about the actual physical resistor that I
-am going to use. Then later, when I move to the physical relization part of the design stage, I can select the actual 
+am going to use. Then later, when I move to the physical realization of the circuit, I can select the actual 
 resistor component.</li>
 <li>The mathematics involved when solving for voltages and currents in a lumped element model is significantly easier. </li>
 </ol>
-Each component can be assigned to its ideal equivalent, and the ideal circuit can be solved without accounting for any
-actual geometry. This trivializes the mathematics in many practical circuits. 
-</p>
 <a href="./mathematics.html">Back</a>
 <a href="./resistor-circuits.html">Next</a>

@@ -16,7 +16,7 @@ Okay, so there are two important
 parameters in circuits: voltage and current. Also, materials have resistance which impedes the flow of 
 current. Additionally, everyone breaks circuits into components because it is way easier 
 that way. Now, we will start looking into the
-different types of components and component combinations and their
+different types of components, component combinations, and their
 behaviors. This is basically what electronics theory or circuit 
 theory is. 
 </p>
@@ -59,15 +59,15 @@ resistor dissipates power and heats up. The first thing to note is that
 the current must be the same everywhere in the circuit. Remember that 
 current is essentially the flow of charge; how could a quantity of flow
 be different if there is only one flow path? It can't be. The next thing to realize is that the voltage 
-across the resistor is the same as the voltage across the voltage source as the 
-voltage source maintains a constant voltage. The previous two ideas will generalized and stated
+across the resistor is the same as the voltage across the voltage source. The 
+voltage source maintains a constant voltage. The previous two ideas are generalized and stated
 slightly more formally later.
 </p>
 
 <b>Ohms Law </b>
 <p>
 To calculate the current through the resistor in the heater circuit we must use ohms law.
-Ohms law relates the voltage a resistor to the current through it. The most common 
+Ohms law relates the voltage across a resistor to the current through it. The most common 
 equation for ohms law is given below:<br>
 V = IR<br>
 Rearranging this equation also leads to two other ways to express ohms law.<br>
@@ -75,7 +75,7 @@ R = V/I<br>
 I = V/R<br>
 These equations also demonstrate what a resistor is in a better sense. A resistor is a component
 that creates voltage across it that is proportional to the current through it. And in the
-opposite sense. The current through a resistor is linearly proportional to the voltage
+opposite sense, the current through a resistor is linearly proportional to the voltage
 across it. We can also use the I=V/R version of the equation to calculate the current in our
 heater circuit. 
 It should also be noted that ohms law is not a real law. This is because ohms law only works for
@@ -101,7 +101,7 @@ law. We can now calculate the power using the power equation. It is also worth n
 dissipated by the resistor is equal to the power supplied to the circuit by the voltage source. Aka conservation
 of energy. There is technically also a sign convention to this, but you only really need to know it 
 for certain derivations, not practical electronics work. 
-One last thing for now. You can combine ohms law and the power equation into the following formulas to 
+One last thing. You can combine ohms law and the power equation into the following formulas to 
 avoid doing unnecessary math. <br>
 P = V^2/R <br>
 P = I^2*R <br>
@@ -109,21 +109,20 @@ P = I^2*R <br>
 
 <b> Resistors In Series </b>
 <p>
-Next lets look at the series resistor circuit shown below. 
+Next let's look at the series resistor circuit shown below. 
 </p>
 <img src="./pictures/resistor-series.png"></img>
 <p>
 For the same reason as the single resistor circuit,
 the current will be the same through all the resistors and the voltage source. Additionally, the voltage across 
-all the resistors will be equal to the voltage across the voltage source. Lets put this into math form and 
+all the resistors will be equal to the voltage across the voltage source. Let's put this into math form and 
 solve it. <br>
 Vr1 + Vr2 + Vr3 = Vs <br>
-Ir1 + Ir2 + Ir3 = Vs <br>
-Ir1 + Ir2 + Ir3 = Vs <br>
-I(r1 + r2 + r3) = Vs <br>
-Vs/I = r1 + r2 + r3 <br>
-Rtotal = r1 + r2 + r3 <br>
-We can reduce the series resistors into an equivalent resistance which is equal to the sum of actual 
+I*R1 + I*R2 + I*R3 = VS <br>
+I(R1 + R2 + R3) = Vs <br>
+Vs/I = R1 + R2 + R3 <br>
+Rtotal = R1 + R2 + R3 <br>
+We can reduce the series resistors into an equivalent resistance which is equal to the sum of  
 individual resistors. This is helpful to find out stuff about the circuit. We can reduce the three 
 resistors into one resistor by adding them up. We can then solve for the current using the source voltage and the
 equivalent resistance. Once we know the current, we can expand the circuit back out and find the voltage across 

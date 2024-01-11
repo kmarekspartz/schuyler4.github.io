@@ -59,6 +59,23 @@
     )
   )
 
+  (sheet (at 55.88 74.93) (size 39.37 25.4) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid c38cc718-653f-4a25-abb8-2389b8794b27)
+    (property "Sheetname" "Semiconductors" (at 55.88 74.2184 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "semiconductors.kicad_sch" (at 55.88 100.9146 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "Circuit_Drawings"
+        (path "/c924b534-0baa-4e79-be3b-346602d0fc2e" (page "5"))
+      )
+    )
+  )
+
   (sheet_instances
     (path "/" (page "1"))
   )

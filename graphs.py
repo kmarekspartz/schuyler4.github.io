@@ -56,3 +56,31 @@ plt.legend()
 plt.savefig('./pictures/constant-integral.png')
 plt.clf()
 
+# RC Discharge
+tt = np.linspace(0, 6, num=1000)
+v = np.exp(-tt)
+
+plt.plot(tt, v)
+plt.xlabel('time (s)')
+plt.ylabel('Voltage (V)')
+plt.title('RC Circuit Voltage')
+plt.savefig('./pictures/rc-voltage.png')
+plt.clf()
+
+plt.plot(tt, v)
+plt.xlabel('time (s)')
+plt.ylabel('Current (A)')
+plt.title('RC Circuit Current')
+plt.savefig('./pictures/rc-current.png')
+plt.clf()
+
+# Resistor IV Curve
+RESISTOR_VALUE = 1000
+vv = np.linspace(0, 1, num=1000)
+ii = vv/RESISTOR_VALUE
+
+plt.plot(vv, ii)
+plt.xlabel('Voltage (V)')
+plt.ylabel('Current (A)')
+plt.title('1000 ohm Resistor Curve Trace')
+plt.savefig('./pictures/resistor-IV.png')

@@ -11,18 +11,17 @@
 </head>
 <h2> Inductors </h2>
 <p>
-So there is one last passive non semiconductor component to go which is the inductor. The fundamental 
+So there is one last component to go before moving to semiconductors. The inductor. The fundamental 
 equation for inductance is as follows: <br>
 L = φ/I<br>
-Any time current flows through a wire there will be a magnetic field around it. This 
+(in a sizable inductor φ is magnetic flux linkage not just magnetic flux) <br>
+Any time current flows through a loop of wire there will be a magnetic field around it and a magnetic flux through the loop area. This 
 is a result of Ampere's Law. In this sense, any wire is an inductor, or at least has
-some inductance. Okay, before we figure out how to build a better inductor and how 
-it relates to magnetic flux linkage: let's look at the consequences of this. 
-The other important law involved with inductors is Faradays law. Faradays law states a 
-changing magnetic field induces a voltage. This is stated mathematically: <br>     
-V = dφ/dt (As usual I have skipped a sign convention here. Additionally there is a
-technical detail I skipped but it shouldn't matter for electronics) <br>
-Quick derivation of equation that is useful in electronics: <br>
+some inductance.  
+The other important law involved with inductors is Faradays law. Faradays law says that a 
+changing magnetic flux induces a voltage. This is stated mathematically: <br>     
+V = dφ/dt (As usual I have skipped a sign convention here. Additionally there are some physics details I skipped, but they shouldn't matter for electronics) <br>
+Quick derivation of the equation that is useful in electronics: <br>
 φ = LI <br>
 V = d/dt(LI) <br>
 V = L(dI/dt) <br>
@@ -32,19 +31,19 @@ changing magnetic field, and a changing magnetic field induces a voltage.
 </p>
 <b> Inductors In Some Basic Circuits </b>
 <p>
-If you put an inductor in parallel with a voltage source it will lead to a linear current 
-that increases to infinity (in reality the inductor will saturate). This is basically a short
-circuit so it's recommended that you don't try this. 
+If you put an inductor in parallel with a voltage source it will lead to a linearly increasing current 
+that continues indefinitely(in reality the inductor will saturate). This is basically a short
+circuit, so it's recommended that you don't try this. 
 
-Putting an inductor in parallel with a current source is equivalent with putting a wire
-in parallel with a current source as long as the current source is constant. 
+Putting an inductor in parallel with a constant current source is equivalent with putting a wire
+in parallel with a constant current source. 
 
-You can also build RL circuits like you can build RC circuits. However, these are not
+You can also build RL circuits like you can build RC circuits. However, these are not used
 often. You can look these up or figure them out if you are interested. 
 </p>
 <b> Inductors in Parallel and Series </b>
 <p>
-Inductors in parallel and series follow the same rules as resistors in parallel in series, just inductors instead. 
+Inductors in parallel and series follow the same rules as resistors in parallel and series, just inductors instead. 
 </p>
 <a href="./magnetics.html">Back</a>
 <a href="./diodes.html">Next</a>
