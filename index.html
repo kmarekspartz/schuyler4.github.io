@@ -1,23 +1,52 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>tick tack toe</title>
-	<script src="https://unpkg.com/vue"></script>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+<title>Electronics</title>
+<style>
+    body {
+        font-family:FreeMono;
+        font-size: 20;
+    }
+</style>
 </head>
-<body>
-	<div id="app">
-		<table>
-			<tr v-for="(row, rowIndex) in board">
-				<td v-for="(column, columnIndex) in row" v-on:click="boardOnClick(rowIndex, columnIndex)">
-					{{ board[rowIndex][columnIndex] }}
-				</td>
-			</tr>
-		</table>
-		<p>{{ player }} turn</p>
-		<p>{{ status }} </p>
-		<button v-if="!gameGoing" v-on:click="resetGame()">Play Again</button>
-	</div>
-	<script src='main.js'></script>
-</body>
-</html>
+<h1> Root Electronics </h1>
+<b>What is this?</b>
+<p>
+So there don't seem to be many good resources on the internet to learn about electronics. 
+If you want to learn electronics,
+you will probably have to resort to buying books, and you have to
+make sure you buy the right books, and many of them are crap. Despite this I still think electronics is a relatively approachable subject. 
+This is my attempt to write a better guide on the core of electronics. No promises that it is good or even correct. 
+</p>
+
+<b>What is electronics?</b> 
+<p>
+I like the definition given on the electronics wikipedia article. So you can go and read that.
+But basically, electronics is any application of electricity that involves active devices.
+That is, devices that use an electric signal to amplify or control another electric signal. 
+It so happens that this manipulation of electricity is used in much of modern technology (It almost is modern technology).
+</p>
+
+<b>Necessary Background</b>
+<p>
+You should know basic high school algebra. Some ideas from calculus are also necessary. 
+I started learning electronics before formally learning calculus. Given this, the necessary calculus material
+is in the first section. If you already know calculus you can skip this. 
+</p>
+<b> Pages </b>
+<ol>
+<li><a href="./mathematics.html">Mathematics</a></li>
+<li><a href="./electricity.html">Electricity</a></li>
+<li><a href="./resistor-circuits.html">Resistor Circuits</a></li>
+<li><a href="./capacitors.html">Capacitors</a></li>
+<li><a href="./RC.html">Resistor Capacitor</a></li>
+<li><a href="inductors.html">Inductors</a></li>
+<li><a href="diodes.html">Diodes</a></li>
+<li><a href="bjt.html">Bipolar Junction Transistor</a></li>
+<li><a href="mosfet.html">MOSFETs</a></li>
+</ol>
+
+<b> Credit </b>
+<p>
+Plots are created using Matplotlib and Numpy Python libraries. Schematics are drawn using KiCad.
+</p>
