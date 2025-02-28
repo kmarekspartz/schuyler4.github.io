@@ -1,1 +1,1 @@
-This is my website on basic electronics.
+This is my website.
